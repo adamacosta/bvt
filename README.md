@@ -4,7 +4,8 @@ THIS MODULE CONTAINS NO ASSIGNMENT DELIVERABLES!
 
 This module comprises test suites designed to mimic the autograders for Georgia 
 Tech OMSCS programming assignments. Each subdirectory contains the BVT for a 
-particular course. Currently, this is only CS 6210 Advanced Operating Systems.
+particular course. Currently, this is only CS 6210 Advanced Operating Systems 
+and CS 6250 Computer Networking.
 
 Contributions are encouraged, but please only contribute test code and harness 
 improvements. This module must never contain solutions to homework assignments.
