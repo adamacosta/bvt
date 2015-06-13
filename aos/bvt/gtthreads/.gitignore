@@ -1,0 +1,5 @@
+# Ignore symbolic links
+gtthread.h
+tests/gtthread_sched.c
+tests/gtthread_mutex.c
+tests/dining.c
