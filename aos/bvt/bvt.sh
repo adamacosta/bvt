@@ -12,6 +12,8 @@ if [ "$PYTEST" = "" ]; then
 	exit
 fi
 
+# Exporting these allows make to use them in resolving source file paths
+# Edit to the correct directories for your assignment deliverables
 export GTTHREADDIR=$HOME/omscs/aos/gtthreads
 export BARRIERDIR=$HOME/omscs/aos/barrier 
 export PROXYDIR=$HOME/omscs/aos/proxy-server
@@ -20,6 +22,7 @@ export RVMDIR=$HOME/omscs/aos/rvm
 function test_gtthreads {
 	echo "=============================== build gtthreads ================================"
 	pushd gtthreads > /dev/null
+	# Create symbolic links from home directory code files to test directory
 	ln -s $GTTHREADDIR/dining.c -t tests
 	ln -s $GTTHREADDIR/gtthread_mutex.c -t tests 
 	ln -s $GTTHREADDIR/gtthread_sched.c -t tests
@@ -27,6 +30,7 @@ function test_gtthreads {
 	make > /dev/null
 	pushd tests > /dev/null
 	py.test -s -v test_gtthreads.py
+	# Delete links to assignment files
 	rm -f dining.c gtthread_mutex.c gtthread_sched.c gtthread.h
 	popd > /dev/null
 	make clean > /dev/null
