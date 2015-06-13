@@ -1,8 +1,13 @@
 # bvt
 
+THIS MODULE CONTAINS NO ASSIGNMENT DELIVERABLES!
+
 This module comprises test suites designed to mimic the autograders for Georgia 
 Tech OMSCS programming assignments. Each subdirectory contains the BVT for a 
 particular course. Currently, this is only CS 6210 Advanced Operating Systems.
+
+Contributions are encouraged, but please only contribute test code and harness 
+improvements. This module must never contain solutions to homework assignments.
 
 Each BVT is a shell script that first builds the project and test code, then drops 
 into a test directory and uses pytest to run the actual tests. From any course 
