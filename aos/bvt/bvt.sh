@@ -20,7 +20,7 @@ export RVMDIR=$HOME/omscs/aos/rvm
 function test_gtthreads {
 	echo "=============================== build gtthreads ================================"
 	#pushd gtthreads
-	#make tests > /dev/null
+	#make > /dev/null
 	#pushd tests > /dev/null
 	#py.test -s -v test_gtthreads.py
 	#popd > /dev/null
@@ -32,7 +32,7 @@ function test_gtthreads {
 function test_barrier {
 	echo "================================ build barrier ================================="
 	#pushd barrier
-	#make tests > /dev/null
+	#make > /dev/null
 	#pushd tests > /dev/null
 	#py.test -s -v test_barrier.py
 	#popd > /dev/null
@@ -44,7 +44,7 @@ function test_barrier {
 function test_proxy-server {
 	echo "============================== build proxy-server =============================="
 	#pushd proxy-server
-	#make tests > /dev/null
+	#make > /dev/null
 	#pushd tests > /dev/null
 	#py.test -s -v test_proxy-server.py
 	#popd > /dev/null
@@ -56,7 +56,7 @@ function test_proxy-server {
 function test_rvm {
 	echo "================================== build rvm ==================================="
 	pushd rvm > /dev/null
-	make tests > /dev/null
+	make > /dev/null
 	pushd tests > /dev/null
 	py.test -s -v test_rvm.py
 	popd > /dev/null

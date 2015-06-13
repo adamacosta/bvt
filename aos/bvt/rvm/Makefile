@@ -7,7 +7,7 @@ LIBS ?= $(RVMDIR)/seqsrchst.o $(RVMDIR)/steque.o $(RVMDIR)/rvm.o
 %.o: %.c
 	$(CC) -c $(CFLAGS) $< -o $@
 
-tests: rvm_test1 rvm_test2 rvm_test3 rvm_test4 rvm_test5 rvm_test6 rvm_test7
+all: rvm_test1 rvm_test2 rvm_test3 rvm_test4 rvm_test5 rvm_test6 rvm_test7
 	rm -f *.o
 	rm -f $(TESTS)/*.o
 
