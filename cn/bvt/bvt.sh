@@ -3,6 +3,13 @@
 export A1DIR=$HOME/omscs/cn/2015-Summer-OMS6250/assignment-1
 export A2DIR=$HOME/omscs/cn/2015-Summer-OMS6250/assignment-2
 export A3DIR=$HOME/omscs/cn/2015-Summer-OMS6250/assignment-3
+PYTEST=`which pytest`
+
+if ["$PYTEST" = ""]
+then
+	echo "Requires pytest"
+	exit
+fi
 
 #echo "============================== test assignment 1 ==============================="
 #if ! [ -e assignment-1/ ]
